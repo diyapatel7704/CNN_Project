@@ -1,0 +1,10 @@
+{% extends 'faceauth/base.html' %}
+
+{% block content %}
+<h1>Result</h1>
+
+<div class="card">
+  <p>{{ message }}</p>
+  <a href="{% url 'faceauth:index' %}">Back to Home</a>
+</div>
+{% endblock %}

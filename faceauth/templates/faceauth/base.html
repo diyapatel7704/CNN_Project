@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Face Authentication System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'faceauth/styles.css' %}">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="topbar">
+        <div class="brand">Diya's FaceAuth System</div>
+
+        <div class="navlinks">
+            <a href="{% url 'faceauth:index' %}">Home</a>
+            <a href="{% url 'faceauth:upload' %}">Upload Reference</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

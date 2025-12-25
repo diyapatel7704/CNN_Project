@@ -1,0 +1,113 @@
+/* GLOBAL --------------------------------------------------- */
+:root {
+    --bg: linear-gradient(135deg, #0f172a, #0b1220);
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --text-light: #e6eef8;
+    --accent: linear-gradient(90deg, #5eead4, #60a5fa);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, Arial;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text-light);
+}
+
+/* NAVBAR --------------------------------------------------- */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 28px;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navlinks a {
+    color: #a9c2ff;
+    margin-left: 18px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navlinks a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT -------------------------------------------- */
+.container {
+    padding: 28px;
+}
+
+/* CARDS ---------------------------------------------------- */
+.card {
+    background: var(--card-bg);
+    padding: 22px;
+    border-radius: 12px;
+    max-width: 760px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* VIDEO ---------------------------------------------------- */
+video {
+    width: 100%;
+    border-radius: 10px;
+    background: #000;
+}
+
+/* CONTROLS ------------------------------------------------- */
+.controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+button {
+    background: var(--accent);
+    border: none;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #012;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#status {
+    margin-left: 14px;
+    color: #ffdede;
+    font-weight: 600;
+}
+
+/* FORMS ---------------------------------------------------- */
+input[type="text"], input[type="file"] {
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: #1e293b;
+    color: #fff;
+}
+
+form label {
+    font-weight: 600;
+}
+
+a {
+    color: #93c5fd;
+}

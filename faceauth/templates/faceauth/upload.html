@@ -1,0 +1,19 @@
+{% extends 'faceauth/base.html' %}
+
+{% block content %}
+<h1>Upload Reference Images</h1>
+
+<div class="card">
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <label>Person Name</label><br>
+    {{ form.person_name }}<br><br>
+
+    <label>Select Images (you can choose multiple)</label><br>
+    {{ form.images }}<br><br>
+
+    <button type="submit">Upload</button>
+  </form>
+</div>
+{% endblock %}
